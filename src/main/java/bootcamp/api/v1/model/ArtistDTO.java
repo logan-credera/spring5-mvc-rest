@@ -1,9 +1,12 @@
-package guru.springfamework.api.v1.model;
+package bootcamp.api.v1.model;
+
+import lombok.Data;
 
 /**
  * Created by jt on 9/24/17.
  */
-public class CategoryDTO {
+@Data
+public class ArtistDTO {
     private Long id;
     private String name;
 }
