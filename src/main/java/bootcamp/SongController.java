@@ -32,9 +32,6 @@ public class SongController {
     public ResponseEntity<SongDTO> getSongByName(String name){
         return new ResponseEntity<SongDTO>(
                 songService.getSongByName(name), HttpStatus.OK);
-
     }
-
-
 
 }
