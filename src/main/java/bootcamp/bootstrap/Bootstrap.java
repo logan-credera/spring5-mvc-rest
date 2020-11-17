@@ -2,17 +2,20 @@ package bootcamp.bootstrap;
 
 import bootcamp.domain.Artist;
 import bootcamp.repositories.ArtistRepository;
+import bootcamp.repositories.SongRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Bootstrap implements CommandLineRunner {
 
-    public Bootstrap(ArtistRepository categoryRepository) {
-        this.artistRepository = categoryRepository;
-    }
-
     private ArtistRepository artistRepository;
+    private SongRepository songRepository;
+
+    public Bootstrap(ArtistRepository artistRepository, SongRepository songRepository) {
+        this.artistRepository = artistRepository;
+        this.songRepository = songRepository;
+    }
 
     @Override
     public void run(String... args) throws Exception {
@@ -25,6 +28,7 @@ public class Bootstrap implements CommandLineRunner {
         artistRepository.save(lil_wayne);
         artistRepository.save(bono);
 
-        System.out.println("count " + artistRepository.count());
+        System.out.println("Artist count " + artistRepository.count());
+        System.out.println("Song count " + songRepository.count());
     }
 }
