@@ -1,4 +1,4 @@
-package bootcamp;
+package bootcamp.controllers;
 
 import bootcamp.api.v1.model.ArtistDTO;
 import bootcamp.api.v1.model.ArtistListDTO;

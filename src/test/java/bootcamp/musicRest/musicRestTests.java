@@ -1,4 +1,4 @@
-package bootcamp.spring5mvcrest;
+package bootcamp.musicRest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Spring5MvcRestApplicationTests {
+public class musicRestTests {
 
 	@Test
 	public void contextLoads() {
